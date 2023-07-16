@@ -1,0 +1,42 @@
+----GUIA PARA CREAR REPOSITORIO Y CONECTARLO AL REPOSITORIO REMOTO
+
+1.vamos al escritorio donde crearemos la carpeta. EJEMPLO
+$ cd Desktop/
+
+2.Creamos la carpeta. EJEMPLO
+$ mkdir "Nombre de la carpeta"
+
+3.Ingresamos adentro de la carpeta. EJEMPLO
+$ cd "Nombre de la carpeta"/
+
+*Despues que tengamos los archivos que necesitamos en la carpeta(en el otro txt explico como crear archivos en una carpeta)*
+
+4.Vamos a llamar al comando git init para que esa carpeta que creamos se convierta en el repositorio local, validamos que estemos en la carpeta 
+e inicializamos con el git init. EJEMPLO
+$ pwd (esto es para validar que estemos en la carpeta que creamos)
+$ git init(con este comando la carpeta se convierte en un repositorio)
+
+*Antes de conectar nuestro repositorio local al remoto primero tenemos que agregar los archivos que queramos para que queden en el repositorior
+remoto tambien,utilizando el git add y el git commit -m (eso lo explico en otro documento txt),aclarando esto sigamos*
+
+5.Si no tenemos el repositorio remoto creado lo creamos en github
+(si no sabemos crearlo buscar un video en youtube)
+
+6.Luego de crear el repositorio remoto nos vamos a nuestro repositorio local y estando dentro del repositorio escribimos el siguiente comando
+$ git remote add origin <pegamos el link de nuestro repositorio remoto>
+
+* Este comando establece la conexion de nuestro repositorio local de git y el repositorio remoto de github.
+* la palabra (origin) se refiere al repositorio remoto y el (URL) especifica la ubicacion del repositorio remoto al que deseamos conectar el 
+repositorio local.
+
+7.Luego de esto vamos a la rama llamada Main con el siguiente comando
+$ git branch -M main
+*Aqui aclaramos que con este comando estamos asegurandonos que nuestra rama principal se llame main.
+
+8.Ahora enviamos los cambios locales al repositorio remoto.
+$ git push -u origin main
+*Con este comando nos lleva al repositorio remoto (origin) en la rama (main). la palabra(-u) no establece el origin main como la rama por defecto
+para realizar el seguimiento en futuros (git push).Asi que ya con esto en el futuro cuando realizemos envios solamente llamamos el comando
+($ git push) y git ya sabra que estos cambion van a la rama main del repositorio origin.
+
+
