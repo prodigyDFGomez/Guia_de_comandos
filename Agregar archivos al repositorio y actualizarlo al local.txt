@@ -1,0 +1,30 @@
+
+----------AQUI EXPLICAREMOS COMO AGREGAR ARCHIVOS Y SUBIRLOS AL REPOSITORIO REMOTO------------------------------
+
+1. Con el comando cd nos vamos a nuestro repositorio local que en el caso mio esta en el escritorio.
+$ cd Desktop/
+$ cd "Guia de comandos"/
+
+2. Cuando vamos agregar un archivo por primera vez y lo vamos a subir al repositorio remoto. Creamos el archivo con el comando touch
+$ touch <nombre del archivo y seguido de el lo podemos como tipo tipo txt>
+
+3. Luego de crear el archivo y agregar la informacion vamos a llamar al comando git add
+$ git add <nombre del archivo>
+
+4. Luego llamamos a git commit -m y escribimos lo que queremos que vaya en el commit
+$ git commit -m <escriben la descripcion del commit>
+
+5.En este momento antes de subir los cambios al repositorio remoto primero escribimos el comando git estatus
+para validar que el documento no este subido
+
+6. Ya teniendo el archivo vamos a seguir los pasos anteriormente explicados en el txt de "Crear repositorio
+y conectarlo al repositorio remoto"
+$ git remote add origin <pegamos el link de nuestro repositorio remoto>
+$ git branch -M main
+$ git push -u origin main
+
+7.Y si ya habiamos hecho estos pasos y hay archivos entonces solo llamamos al comando git push para subir 
+el archivo al repositorio remoto.
+$ git push
+
+
