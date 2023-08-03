@@ -1,0 +1,100 @@
+------------VAMOS A VER LOS COMANDOS MAS UTILIZADOS CON EJEMPLOS
+
+cd: Este comando es para entrar en una carpeta en especifico: EJEMPLO
+$ cd Desktop/
+-Aqui le estamos diciendo que nos lleve al escritorio,tener en cuenta que siempre que pongamos una carpeta al final debemos terminar con el
+simbolo /.
+--------------------------------------------------------------------------------------------------------------------------------------------
+cd ..: Con este comando es para salir de una carpeta. EJEMPLO
+$ cd..
+-Si estabamos en el disco C por ejemplo, al llamar este comando nos iremos al equipo donde esta el disco C y el disco D .
+--------------------------------------------------------------------------------------------------------------------------------------------
+ls: Este comando es para mostrar los archivos que hay en la carpeta donde estamos ubicados. EJEMPLO
+$ ls 
+-al poner este comando nos mostrara los archivos que hayan en la carpeta, solo mostrara los archivos que son visibles.
+--------------------------------------------------------------------------------------------------------------------------------------------
+ls -a: Con este comando mostraremos todos los archivos que estan en la carpeta incluyendo los que son invisibles. EJEMPLOS.
+$ ls -a 
+-al agregar este codigo muestra todos los archivos y los que esten ocultos.
+--------------------------------------------------------------------------------------------------------------------------------------------
+pwd: Este comando tiene la funcion de mostrarnos la direccion en la que estamos en el momento presente. EJEMPLO
+$ pwd
+-Al poner este codigo nos muestra la direccion de esta manera /D/Desktop/Guia de comandos
+--------------------------------------------------------------------------------------------------------------------------------------------
+clear: Este comando es para limpiar la terminal. EJEMPLO
+$ clear
+-Enseguida nos borrara todo lo que hayamos escrito en git
+--------------------------------------------------------------------------------------------------------------------------------------------
+mkdir: Este comando es para crear una carpeta. EJEMPLO
+$ mkdir Documentos
+-Tener en cuenta que si el nombre de la carpeta lleva espacios, por decir <Documentos compartidos>, en ese caso el nombre de la carpeta lo
+ponemos en comillas, asi: $mkdir "Documentos Compartidos"
+--------------------------------------------------------------------------------------------------------------------------------------------
+touch: Este comando es para crear un archivo, bien sea txt o js. EJEMPLO
+$ touch Datos.txt
+-Al igual que crear una carpeta tenemos que tener en cuenta si el archivo tiene espacios, hay que ponerlo entre comillas, y al final ponerle
+que tipo de dato es, asi: $ touch "Mi archivo.js"
+--------------------------------------------------------------------------------------------------------------------------------------------
+rm: Este comando es para eliminar archivos. EJEMPLO
+$ rm miArchivo.js
+-Cuando llamamos al comando rm tenemos que poner el nombre correcto del archivo, para evitar una falla
+--------------------------------------------------------------------------------------------------------------------------------------------
+rm -r: Este comando es para eliminar carpetas. EJEMPLO
+$ rm -r miCarpeta
+- con este comando borramos la carpeta y todo lo que este dentro de ella
+--------------------------------------------------------------------------------------------------------------------------------------------
+code: Este comando es para abrir un archivo que tengamos creado en el visual studio code. EJEMPLO
+$ code miArchivo.js
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------COMANDOS DE REPOSITORIOS REMOTOS---------------------------------------------------------
+git init: Este comando es para crear un repositorio local, tener en cuenta que tenemos que estar dentro de la carpeta la cual la vamos a 
+convertir a repositorio local,no hay que llamar este comando cuando estemos por ejemplo en el escritorio, o que tenga archivos grandes.
+$ git init
+-Tener en cuenta que antes de hacer esto validamos que realmente estemos en la carpeta que queremos con el comando pwd
+---------------------------------------------------------------------------------------------------------------------------------------------
+git add: Este comando es para preparar y organizar los cambios que deseas incluir en el proximo commit. EJEMPLO
+$ git add miArchivo.js
+-Tener en cuenta que esto lo hacemos despues de registrar los datos en nuestro archivo para poder hacer el commit
+--------------------------------------------------------------------------------------------------------------------------------------------
+git add .: Con este comando agregamos todos los cambios nuevos y modificados
+$ git add .
+-Tener en cuenta que esto lo hacemos cuando editamos y hacemos varios cambios de varior archivos.
+--------------------------------------------------------------------------------------------------------------------------------------------
+$ git commit -m:Este comando es muy importante para git, cuando ya tenemos el archivo modificado, ya que se utiliza para guardar los cambios
+realizados en este archivo, y con -m nos permite escribir un mensaje describiendo los cambios o modificaciones que le hemos hecho.EJEMPLO
+$ git commit -m "en las comillas escribes la modificacion que se hizo"
+-Tener en cuenta que antes de usar ese git commit, primero tenemos que agregar los archivos que queremos en ese commit, con el comando git add
+-Luego de esto podemos llamar al git commit -m.
+-Si no queremos agregar un mensaje por nuestra cuenta, si quieres que el mensaje del commit sea mas largo y complejo, solo escribimos
+git commit y ya.
+--------------------------------------------------------------------------------------------------------------------------------------------
+git log: Este comando es para listar todos los commt del repositorio mostrando su fecha, el autor y el commit. EJEMPLO
+$ git log:
+--------------------------------------------------------------------------------------------------------------------------------------------
+git push: Este comando es para mandar nuestros commits a un servidor remoto. EJEMPLO
+$ git push
+-un dato importante de aclarar es que la primera vez que utilizamos push tenemos que darle la direccion de nuestro repositorio,despues de esto
+solo mandamos los commit solamente con git push.
+--------------------------------------------------------------------------------------------------------------------------------------------
+git status: Este comando nos muestra la descripcion del estado de los archivos. EJEMPLO
+$ git status
+--------------------------------------------------------------------------------------------------------------------------------------------
+git pull: Este comando es para recibir cambios de repositorio remoto al local
+--------------------------------------------------------------------------------------------------------------------------------------------
+code: este comando es para llevarme al visual studio code
+$ code
+-Hay que tener en cuenta que si queremos que nos abra el visual con el documento que queremos editar, lo hacemos de la siguiente manera
+$ code "nombre del archivo"
+--------------------------------------------------------------------------------------------------------------------------------------------
+git clone: Este comando es para clonar nuestro repositorio local al remoto. EJEMPLO
+$ git clone <pegamos el link de nuestro repositorio remoto>
+--------------------------------------------------------------------------------------------------------------------------------------------
+rm -rf: Es para borrar nuestro repositorio local directamente. EJEMPLO
+$ rm -rf
+--------------------------------------------------------------------------------------------------------------------------------------------
+git branch: Lista todas las ramas en el repositorio y resalta la rama actual.
+$ git branch
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
